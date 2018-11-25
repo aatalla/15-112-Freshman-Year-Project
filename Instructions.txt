@@ -1,0 +1,17 @@
+Instructions:
+
+*    Each player receives 13 cards to start with.
+
+*    Each player can bid higher if he/she feel that they can collect a higher
+     number of tricks with the set of cards they have (least: 7 tricks,
+     highest: 13 tricks). The highest bidder gets to choose the trump suit.
+
+*    The players opposite to each other form a team.
+
+*    Each player plays a card on the table and the highest card or the
+     highest trump suit (in case if it is played) collects the trick.
+
+*    A player is only allowed to play the trump suit if he/she does not
+     have the suit of the first card thrown in that turn.
+
+*    You win the game by collecting the number of tricks bid first.

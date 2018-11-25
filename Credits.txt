@@ -1,0 +1,10 @@
+Helping codes derived from:
+
+* https://stackoverflow.com
+
+* https://www.pygame.org/docs/
+
+
+Images derived from:
+
+* https://www.google.com.qa/imghp?hl=en&tab=wi
