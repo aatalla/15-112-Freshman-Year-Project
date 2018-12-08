@@ -1,7 +1,9 @@
 15-112-Freshman-Year-Project
-Checkpoint 1 
 
-In this repository, the only the GUI is implemented.
-The library that I used is included in the repository too.
-All you have to run this code now.
-Make sure that you have a python.exe installed.
+Checkpoint 2
+
+The filename with "15-112 Project Code.py" is the game.
+
+DO NOT use "python.exe" to run the game. Use an IDE instead.
+
+Most importantly, ENJOY!
