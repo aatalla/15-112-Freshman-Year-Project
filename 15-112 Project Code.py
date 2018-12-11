@@ -1,5 +1,13 @@
 import random
 
+# Author: Andria Atalla
+
+# 15-112 Final Project
+
+# This is a Tarneeb game
+
+# DO NOT run on "python.exe"
+
 class Card:
 
     def __init__(self, val, suit):
@@ -139,6 +147,7 @@ def play():
         for i in players:
 
             if i.name==x:
+
                 players=players[players.index(i):]+players[:players.index(i)]
 
         return players
@@ -298,36 +307,14 @@ def play():
     discardedCards=[]
     yourTricks=0
     opponentTricks=0
+    players=resort(players,greatestBidder)
 
     for i in range (13):
 
         print "\n"
         player1.showHand()
-        players=resort(players,greatestBidder)
         playedCards=[]
         winner=""
-        if greatestBidder==yourName or greatestBidder=="Player 3":
-
-            if yourTricks==greatest:
-
-                print "Congratulations, you beat this tarneeb"
-                exit()
-
-            elif opponentTricks>13-greatest:
-
-                print "Congratulations, you played yourself. In other words, You took an L :) "
-                exit()
-        else:
-
-            if opponentTricks==greatest:
-
-                print "Congratulations, you played yourself. In other words, You took an L :) "
-                exit()
-
-            elif yourTricks>13-greatest:
-
-                print "Congratulations, you beat this tarneeb"
-                exit()
 
         for j in players:
 
@@ -573,12 +560,38 @@ def play():
             players=resort(players,winner.name)
 
             if winner.name==yourName or winner.name=="Player 3":
+
                 yourTricks+=1
 
             else:
+
                 opponentTricks+=1
 
         print "\nWinner is: " + winner.name + "\n"
+
+        if greatestBidder==yourName or greatestBidder=="Player 3":
+
+            if yourTricks==greatest:
+
+                print "Congratulations, you beat this tarneeb"
+                exit()
+
+            elif opponentTricks>13-greatest:
+
+                print "Congratulations, you played yourself. In other words, You took an L :) "
+                exit()
+        else:
+
+            if opponentTricks==greatest:
+
+                print "Congratulations, you played yourself. In other words, You took an L :) "
+                exit()
+
+            elif yourTricks>13-greatest:
+
+                print "Congratulations, you beat this tarneeb"
+                exit()
+
         print "Your team's tricks: " + str(yourTricks)
         print "Opponents' tricks: " + str(opponentTricks)
 
