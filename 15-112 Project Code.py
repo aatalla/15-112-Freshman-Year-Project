@@ -303,7 +303,7 @@ def play():
 
         print "\n"
         player1.showHand()
-        players=resort(players,x)
+        players=resort(players,greatestBidder)
         playedCards=[]
         winner=""
         if greatestBidder==yourName or greatestBidder=="Player 3":
