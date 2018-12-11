@@ -568,7 +568,8 @@ def play():
                 opponentTricks+=1
 
         print "\nWinner is: " + winner.name + "\n"
-
+        print "Your team's tricks: " + str(yourTricks)
+        print "Opponents' tricks: " + str(opponentTricks)
         if greatestBidder==yourName or greatestBidder=="Player 3":
 
             if yourTricks==greatest:
@@ -592,7 +593,5 @@ def play():
                 print "Congratulations, you beat this tarneeb"
                 exit()
 
-        print "Your team's tricks: " + str(yourTricks)
-        print "Opponents' tricks: " + str(opponentTricks)
 
 play()
